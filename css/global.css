@@ -41,3 +41,9 @@ ul {
     max-width: initial;
   }
 }
+
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 2.5rem;
+  }
+}

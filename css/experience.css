@@ -75,6 +75,7 @@
     grid-template-columns: 1fr;
     gap: 40px;
     margin-bottom: 40px;
+    padding: 40px 20px;
   }
   .experience .empresas {
     margin-top: 0px;
