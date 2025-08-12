@@ -1,0 +1,43 @@
+body {
+  font-family: "Google Sans Code", monospace, Arial, Helvetica, sans-serif;
+  margin: 0px;
+  color: #262626;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.subtitulo {
+  font-size: 8rem;
+  text-transform: uppercase;
+  line-height: 0.8;
+  overflow-wrap: anywhere;
+  max-width: 3ch;
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
+}

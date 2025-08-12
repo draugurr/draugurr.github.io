@@ -1,0 +1,82 @@
+.introducao {
+  max-width: 1200px;
+  padding: 40px 40px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 200px;
+  align-items: end;
+}
+.introducao-texto {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+  max-width: 35ch;
+  color: #404040;
+}
+
+.introducao-texto strong {
+  color: #262626;
+}
+.introducao h1 {
+  font-size: 4.75rem;
+  line-height: 1.2;
+  margin-bottom: 23px;
+  position: relative;
+}
+
+.introducao h1::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img-portfolio/detalhe1.svg");
+  position: absolute;
+  left: -30px;
+  top: 55px;
+}
+
+@media (max-width: 1200px) {
+  .introducao {
+    gap: 100px;
+  }
+
+  .introducao h1::before {
+    width: 12px;
+    height: 12px;
+    left: -20px;
+    top: 40px;
+  }
+}
+
+@media (max-width: 950px) {
+  .introducao {
+    gap: 70px;
+  }
+  .introducao h1 {
+    font-size: 3.5rem;
+  }
+  .introducao p {
+    font-size: 1.2rem;
+  }
+  .introducao h1::before {
+    width: 8px;
+    height: 8px;
+    left: -13px;
+    top: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 650px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .introducao img {
+    display: none;
+  }
+}
